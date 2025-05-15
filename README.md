@@ -61,7 +61,7 @@ aln = Alignment(env)
 aln.append(file='template.ali', alignment_format='PIR', align_codes='ALL')
 
 #-- Convert the input sequence/alignment into
-#   profile format
+
 prf = aln.to_profile()
 
 #-- Scan sequence database to pick up homologous sequences
@@ -79,10 +79,6 @@ aln = prf.to_alignment()
 aln.write(file='build_profile.ali', alignment_format='PIR')
 
 This is going to generate 3 output files in your folder:
-
-
-
-
 
 
 
